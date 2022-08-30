@@ -432,9 +432,9 @@ class GUMP
             $rules = $this->parse_rules($rawRules);
             $is_required = $this->field_has_required_rules($rules);
 
-            if (!$is_required && self::is_empty($input[$field])) {
-                continue;
-            }
+            // if (!$is_required && self::is_empty($input[$field])) {
+            //     continue;
+            // }
 
             foreach ($rules as $rule) {
                 $parsed_rule = $this->parse_rule($rule);
